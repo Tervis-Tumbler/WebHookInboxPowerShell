@@ -48,7 +48,7 @@ Function New-WebHookInboxContent {
         $Body,
         $QueryStringParamterString
     )
-    $URI = "$APIRoot/i/$InboxID/in" + $QueryStringParamterString
+    $URI = "$APIRoot/i/$InboxID/in/?" + $QueryStringParamterString
 
     Invoke-RestMethod -Method Post -Uri $URI -Body $Body
 }
