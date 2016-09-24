@@ -77,7 +77,7 @@ Function New-WebHookInboxResponse {
 #    param (
 #        $InboxID = $(Get-WebHookInboxID),
 #        [ValidateSet("refresh","respond","in","items","stream","Create")]$Subpart,
-#        $QueryStringParamterString
+#        $QueryStringParamterString #If we make this a parmeter ensure there is a max length as their API returns 400 if it is longer than specific length
 #    )
 #    "$APIRoot/i/$InboxID/in" + $QueryStringParamterString
 #}
